@@ -3,4 +3,4 @@ EXPOSE 8501
 WORKDIR /app
 COPY . ./
 RUN pip3 install -r requirements.txt
-CMD ["/bin/bash"]
+CMD ["streamlit","run","app.py"]
